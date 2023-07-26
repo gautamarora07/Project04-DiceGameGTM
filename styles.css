@@ -1,0 +1,143 @@
+body
+{   
+    margin: 0;
+    margin-bottom: 5%;
+}
+  
+h1
+{
+    margin: 0 0 10px 0;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.result
+{   margin : 0;
+    padding: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: gold;
+    font-family: 'REM', sans-serif;
+    background-color: black ;
+  
+}
+.headingDice
+{
+    height: 5rem;
+}
+
+.grid-container
+{   /*border: 1px solid blue;*/
+    display: grid;
+    gap : 1rem;
+    grid-template : 1fr / 1fr 1fr;
+}
+
+.flex-container
+{   /*border: 1px solid green;*/
+    display: flex;
+    /*height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+}
+.playerNo
+{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.diceImgBox
+{
+    /*border: 1px dashed red;*/
+    width: 300px; height: 300px;
+    text-align: center;
+  
+}
+
+.reload
+{ 
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 4rem;
+   
+}
+
+.Button
+{
+    background-color:cornflowerblue;
+    padding:2% 5%;
+    color: antiquewhite;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 0;
+    border-radius: 5%;
+    
+}
+
+@media (max-width : 480px) {
+   
+    h1 {
+    
+    margin: 0 0 5px 0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #heading
+    {  
+        display: flex;
+        justify-content: center;
+    }
+
+    .result {   
+    margin : 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: gold;
+    font-family: 'REM', sans-serif;
+    background-color: black ;
+    }    
+
+    .headingDice {
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+     }
+
+     .diceImgBox > img {
+        width: 200px;
+     }
+
+     .grid-container
+{   
+    display: grid;
+    gap : 1rem;
+    grid-template : 1fr 1fr 10rem/ 1fr;
+}
+
+#dice1
+{
+    grid-row: 1/2;
+    margin-bottom: 1rem;
+}
+
+#dice2
+{
+    grid-row: 2/3;
+}
+.reload{
+    margin-bottom: 0;
+  
+
+}
+.Button
+{
+    font-size: 1.5rem;
+}
+}
