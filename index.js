@@ -9,15 +9,18 @@ document.querySelector("#dice2 img").setAttribute("src", randomNo2Img);
 
 if(randomNo1>randomNo2)
 {
-document.querySelector(".result").innerHTML = "🎉PLAYER 1 WINS!";
+document.querySelector(".result").innerHTML = "PLAYER 1 WINS!";
+document.querySelector("#dice1 .playerNo").innerHTML = "🚩 PLAYER 1";
 }
 else if(randomNo1<randomNo2)
 {
-    document.querySelector(".result").innerHTML = "PLAYER 2 WINS!🎉";
+    document.querySelector(".result").innerHTML = "PLAYER 2 WINS!";
+    document.querySelector("#dice2 .playerNo").innerHTML = "PLAYER 2 🚩";
 }
 else
 {
     document.querySelector(".result").innerHTML = "DRAW!";
+
 }
 
 
